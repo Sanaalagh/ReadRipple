@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReadRipple - Revolutionizing Reading</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5F5F5;
+    }
+    .hero-bg {
+      background: linear-gradient(to right, rgba(236, 87, 12, 0.8), rgba(245, 222, 179, 0.8)), url('cover-image.jpg') no-repeat center center/cover;
+    }
+    .feature-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .title {
+      font-family: 'Playfair Display', serif;
+    }
+    .maroon-bg {
+      background-color: #f73d0f;
+    }
+    .beige-bg {
+      background-color: #F5DEB3;
+    }
+    .nude-bg {
+      background-color: #D2B48C;
+    }
+    .shadow-lg {
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+    .rounded-full {
+      border-radius: 50%;
+    }
+    .highlight:hover {
+      background-image: url(UI RR OFF.jpg)
+      background-color: #d3b8ae;
+      color: #800000;
+    }
+  </style>
+</head>
+<body>
+  <header class="maroon-bg text-white p-4 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="text-4xl font-bold title">ReadRipple</div>
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="#intro" class="hover:text-gray-300 highlight">Home</a></li>
+        <li><a href="#features" class="hover:text-gray-300 highlight">Features</a></li>
+        <li><a href="#about" class="hover:text-gray-300 highlight">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro" class="hero-bg h-screen flex items-center justify-center text-center text-white">
+    <div>
+      <h1 class="text-6xl font-bold mb-6 title"><img src="UI RR OFF.jpg" alt="ReadRipple">ReadRipple</h1>
+      <p class="text-2xl mb-8">Revolutionizing Reading and Organization</p>
+      <a href="http://your-deployed-app-url.com" class="bg-beige-500 hover:bg-beige-700 text-maroon-900 font-bold py-3 px-6 rounded-full shadow-lg">Try ReadRipple Now</a>
+    </div>
+  </section>
+
+  <section id="features" class="py-16 beige-bg">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 title">Key Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="feature-card bg-white p-8 rounded-lg shadow-lg transform transition-transform">
+          <img src="feature1.jpg" alt="Document Organization" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h3 class="text-2xl font-bold mb-4">Document Organization</h3>
+          <p class="text-lg">Organize your documents efficiently with our intuitive tagging system.</p>
+        </div>
+        <div class="feature-card bg-white p-8 rounded-lg shadow-lg transform transition-transform">
+          <img src="feature2.jpg" alt="Annotations and Highlights" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h3 class="text-2xl font-bold mb-4">Annotations and Highlights</h3>
+          <p class="text-lg">Easily highlight text and add annotations to keep track of important information.</p>
+        </div>
+        <div class="feature-card bg-white p-8 rounded-lg shadow-lg transform transition-transform">
+          <img src="feature3.jpg" alt="Cross-Device Sync" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h3 class="text-2xl font-bold mb-4">Cross-Device Sync</h3>
+          <p class="text-lg">Access your documents from any device with seamless synchronization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 nude-bg">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 title">About ReadRipple</h2>
+      <p class="text-xl mb-8">ReadRipple was inspired by the need for a comprehensive tool that enhances the reading experience and document management. Whether you are a student, researcher, or professional, ReadRipple offers the features you need to stay organized and efficient.</p>
+      <p class="text-xl mb-8">This project is part of the Holberton School Portfolio Project. Learn more about the project on our GitHub repository.</p>
+      <div class="team mb-12">
+        <h3 class="text-3xl font-bold mb-6 title">Meet The Author</h3>
+        <div class="flex justify-center">
+          <div class="team-member mx-4">
+            <img src="sanaa.png" alt="Sanaa Laghzou" class="w-32 h-32 object-cover rounded-full mx-auto mb-4 shadow-lg">
+            <h4 class="text-2xl font-bold">Sanaa Laghzou</h4>
+            <p class="text-lg"><a href="https://www.linkedin.com/in/sanaa-laghzou" class="text-maroon-500 hover:underline">LinkedIn</a> | <a href="https://github.com/sanaalaghzou" class="text-maroon-500 hover:underline">GitHub</a> | <a href="https://twitter.com/sanaalaghzou" class="text-maroon-500 hover:underline">Twitter</a></p>
+          </div>
+        </div>
+      </div>
+      <p><a href="https://github.com/your-repo-url" class="bg-maroon-800 hover:bg-maroon-600 text-white font-bold py-3 px-6 rounded-full shadow-lg">GitHub Repository</a></p>
+    </div>
+  </section>
+
+  <footer class="maroon-bg text-white text-center py-4">
+    <p>&copy; 2024 ReadRipple. All rights reserved.</p>
+  </footer>
+</body>
+</html>
