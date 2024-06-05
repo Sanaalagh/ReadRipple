@@ -1,8 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
 body {
-	padding: 10px;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	line-height: 1.6;
-	font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAF0E6;
+  margin: 0;
+  padding: 0;
+}
+
+.brown-bg {
+  background-color: #8B4513;
+  color: white;
+}
+
+.sandy-bg {
+  background-color: #F4A460;
+  color: white;
+}
+
+.header {
+  background-color: #8B4513;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-right: 1rem;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  color: #D2B48C;
+}
+
+.hero-bg {
+  background: linear-gradient(to right, rgba(236, 87, 12, 0.8), rgba(245, 222, 179, 0.8)), url('src/assets/UI-RR.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #8B4513;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #F4A460;
+  color: #8B4513;
+}
+
+.btn-primary:hover {
+  background-color: #D2B48C;
+}
+
+.btn-secondary {
+  background-color: #8B4513;
+  color: #F4A460;
+}
+
+.btn-secondary:hover {
+  background-color: #5A2A0A;
+}
+
+.features {
+  background-color: #F5DEB3;
+  padding: 4rem 0;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-member img {
+  border-radius: 50%;
+}
+
+.footer {
+  background-color: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.highlight:hover {
+  background-color: #D2B48C;
+  color: #8B4513;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-in-out;
 }
