@@ -43,7 +43,7 @@ body {
 }
 
 .hero-bg {
-  background: linear-gradient(to right, rgba(236, 87, 12, 0.8), rgba(245, 222, 179, 0.8)), url('/frontend/src/assets/UI-RR.jpg') no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(236, 87, 12, 0.8), rgba(245, 222, 179, 0.8)), url('frontend/src/assets/UI-RR.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
