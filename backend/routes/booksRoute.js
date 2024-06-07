@@ -25,7 +25,7 @@ router.post("/", async (request, response) => {
     const book = await Book.create(newBook);
 
     return response.status(201).send(book);
-  } catch (error) {
+} catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
   }
@@ -84,7 +84,6 @@ router.put("/:id", async (request, response) => {
     response.status(500).send({ message: error.message });
   }
 });
-
 // Route for delete a book
 router.delete("/:id", async (request, response) => {
   try {
