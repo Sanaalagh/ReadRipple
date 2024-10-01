@@ -3,7 +3,7 @@ import { Book } from "../models/bookModel.js";
 
 const router = express.Router();
 
-// Route for save a new book
+// Route for saving a new book
 router.post("/", async (request, response) => {
   try {
     if (
@@ -31,7 +31,7 @@ router.post("/", async (request, response) => {
   }
 });
 
-// Route for get all books from db
+// Route for getting all books from db
 router.get("/", async (request, response) => {
   try {
     const books = await Book.find({});
@@ -45,7 +45,7 @@ router.get("/", async (request, response) => {
   }
 });
 
-// Route for get books from db by id
+// Route for getting books from db by id
 router.get("/:id", async (request, response) => {
   try {
     const { id } = request.params;
@@ -58,7 +58,7 @@ router.get("/:id", async (request, response) => {
   }
 });
 
-// Route for update a book
+// Route for updating a book
 router.put("/:id", async (request, response) => {
   try {
     if (
@@ -84,7 +84,7 @@ router.put("/:id", async (request, response) => {
     response.status(500).send({ message: error.message });
   }
 });
-// Route for delete a book
+// Route for deleting a book
 router.delete("/:id", async (request, response) => {
   try {
     const { id } = request.params;

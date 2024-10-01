@@ -103,5 +103,4 @@ The open-source community for providing invaluable resources and inspiration.
 My friends and family for their constant support and understanding.
 The developers and contributors of the MERN stack technologies for creating such powerful tools.
 
----
 

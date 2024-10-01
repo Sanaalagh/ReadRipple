@@ -1,6 +1,6 @@
-// Add any JavaScript functionality you want here
+// Add any JavaScript functionality you want here .
 document.addEventListener('DOMContentLoaded', (event) => {
-	// Example of an animation when scrolling to a section
+	// Example of an animation when scrolling to a section ,
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	  anchor.addEventListener('click', function (e) {
 		e.preventDefault();
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	});
   });
   document.addEventListener('DOMContentLoaded', (event) => {
-	// Smooth scrolling for anchor links
+	// Smooth scrolling for anchor links ,
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	  anchor.addEventListener('click', function (e) {
 		e.preventDefault();
